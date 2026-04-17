@@ -1,0 +1,76 @@
+{
+  "problems": [
+    {
+      "id": "1",
+      "num": "01",
+      "title": "The Training Phase",
+      "desc": "Training a foundational 70B parameter model consumes approximately 1,000 MWh of electricity over several months. This alone generates carbon emissions roughly equivalent to flying 300 passengers round-trip from New York to London."
+    },
+    {
+      "id": "2",
+      "num": "02",
+      "title": "Inference at Scale",
+      "desc": "While training is a massive one-time cost, inference is eternal. Millions of users generating billions of tokens daily requires data centers to run massive GPU clusters 24/7, vastly surpassing training costs over a model's lifecycle."
+    },
+    {
+      "id": "3",
+      "num": "03",
+      "title": "Cooling Overhead",
+      "desc": "For every watt of power used by a GPU to calculate matrix multiplications, another massive fraction is spent on liquid and air cooling systems to prevent server meltdown, doubling the actual grid footprint."
+    }
+  ],
+  "solutions": [
+    {
+      "id": "1",
+      "num": "KV",
+      "title": "Semantic & KV Caching",
+      "desc": "By hashing and storing the 'Key-Value' states of previous context, we avoid re-computing identical prompt prefixes. Implementing semantic caches layer prevents repeated generation of similar answers entirely."
+    },
+    {
+      "id": "2",
+      "num": "MoE",
+      "title": "Mixture of Experts",
+      "desc": "Sparse models route inputs to specific 'expert' clusters. Instead of activating 100% of a 70B model, an MoE might only activate 14B parameters per token. This yields massive compute and VRAM bandwidth savings."
+    },
+    {
+      "id": "3",
+      "num": "4B",
+      "title": "Sub-byte Quantization",
+      "desc": "Shrinking precision from FP16 to INT4 or lower. Utilizing techniques like AWQ allows inference on hardware that consumes a fraction of the power without catastrophic degradation of reasoning capability."
+    }
+  ],
+  "leaderboard": [
+    {
+      "id": "1",
+      "name": "Llama 3.1 8B Instruct",
+      "architecture": "Dense INT4 (Quantized)",
+      "energyPerMillion": "0.15 kWh",
+      "grade": "A+",
+      "color": "var(--neon-green)"
+    },
+    {
+      "id": "2",
+      "name": "Mistral 8x7B",
+      "architecture": "Sparse MoE (FP16)",
+      "energyPerMillion": "0.90 kWh",
+      "grade": "A",
+      "color": "var(--neon-cyan)"
+    },
+    {
+      "id": "3",
+      "name": "Standard 70B Model",
+      "architecture": "Dense FP16 (Unoptimized)",
+      "energyPerMillion": "5.50 kWh",
+      "grade": "C-",
+      "color": "#FF3366"
+    },
+    {
+      "id": "4",
+      "name": "Legacy 175B Architecture",
+      "architecture": "Ultra-Dense FP32",
+      "energyPerMillion": "15.00+ kWh",
+      "grade": "F",
+      "color": "#FF0000"
+    }
+  ]
+}

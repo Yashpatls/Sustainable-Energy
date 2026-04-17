@@ -1,0 +1,107 @@
+{
+  "users": [
+    {
+      "name": "yash",
+      "email": "yashpatel1042@gmail.com",
+      "password": "123456"
+    },
+    {
+      "name": "Test User",
+      "email": "test@example.com",
+      "password": "password123"
+    }
+  ],
+  "stats": {
+    "Yash Varmora": {
+      "tokens": 351,
+      "sessions": [
+        {
+          "time": "10:33 am",
+          "tokens": 16,
+          "energy": "0.00080",
+          "text": "Explain how renewable energy affects cloud network..."
+        },
+        {
+          "time": "05:20 pm",
+          "tokens": 13,
+          "energy": "0.00065",
+          "text": "Explain how renewable energy affects cloud networ"
+        },
+        {
+          "time": "10:48 am",
+          "tokens": 16,
+          "energy": "0.00080",
+          "text": "Explain how renewable energy affects cloud network..."
+        },
+        {
+          "time": "09:10 am",
+          "tokens": 16,
+          "energy": "0.00080",
+          "text": "Explain how renewable energy affects cloud network..."
+        },
+        {
+          "time": "09:08 am",
+          "tokens": 16,
+          "energy": "0.00080",
+          "text": "Explain how renewable energy affects cloud network..."
+        },
+        {
+          "time": "09:07 am",
+          "tokens": 16,
+          "energy": "0.00080",
+          "text": "Explain how renewable energy affects cloud network..."
+        },
+        {
+          "time": "09:40 am",
+          "tokens": 16,
+          "energy": "0.00080",
+          "text": "Explain how renewable energy affects cloud network..."
+        },
+        {
+          "time": "09:21 am",
+          "tokens": 6,
+          "energy": "0.00030",
+          "text": "Explain how renewable "
+        },
+        {
+          "time": "09:21 am",
+          "tokens": 4,
+          "energy": "0.00020",
+          "text": "🌿 Explain how renewable "
+        },
+        {
+          "time": "09:20 am",
+          "tokens": 10,
+          "energy": "0.00050",
+          "text": "🌿 Explain how renewable energy affects cloud network..."
+        }
+      ],
+      "profilePic": null
+    },
+    "Microsoft User": {
+      "tokens": 0,
+      "sessions": [],
+      "profilePic": null
+    },
+    "Eco Researcher": {
+      "tokens": 0,
+      "sessions": [],
+      "profilePic": null
+    },
+    "Yash Microsoft": {
+      "tokens": 0,
+      "sessions": [],
+      "profilePic": null
+    },
+    "yash": {
+      "tokens": 0,
+      "sessions": [],
+      "profilePic": null
+    },
+    "Test User": {
+      "tokens": 0,
+      "sessions": [],
+      "profilePic": null
+    }
+  }
+}
